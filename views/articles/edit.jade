@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+  h1= title
+  
+  include errors
+  
+  form(action="/articles/" + article.id + "?_method=PUT", method="post")
+    include form

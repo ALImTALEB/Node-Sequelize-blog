@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+  h1= title
+  p Listing all articles
+  p
+    a(href="/articles/new") Create New Article
+  
+  each article in articles
+    h2= article.title
+    include by_line
+    p= article.shortDescription()
+    a(href = "/articles/" + article.id) Read More &rarr;

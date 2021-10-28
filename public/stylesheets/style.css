@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.small {
+    font-size: 10px;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+input[type=text], textarea {
+    width: 250px;
+}
+
+.errors {
+    color: red;
+}
